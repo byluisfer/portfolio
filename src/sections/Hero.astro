@@ -1,0 +1,65 @@
+---
+import '@fontsource/saira-extra-condensed/900.css';
+import '@fontsource/lobster';
+import '@fontsource/m-plus-rounded-1c';
+---
+
+<section class="flex items-center justify-center h-screen">
+  <div class="absolute z-0 text-center">
+    <h1 class="text-16xl saira-extra-condensed-font font-black text-quinary">
+      WELCOME
+    </h1>
+  </div>
+  <div class="absolute z-10 text-center transform translate-x-16 led-effect">
+    <h2 class="text-9xl lobster-font text-primary">
+      Luis Fernández
+    </h2>
+  </div>
+  <div class="absolute z-20 custom-right text-right led-effect">
+    <h3 class="text-4xl rounded-Mplus-1c-font text-secondary">
+      Computer Science EFZ
+    </h3>
+  </div>
+  <div class="absolute z-20 custom-left text-left">
+    <h4 class="text-4xl rounded-Mplus-1c-font text-secondary">
+      I'm
+    </h4>
+  </div>
+</section>
+
+<style>
+  .saira-extra-condensed-font {
+    font-family: 'Saira Extra Condensed', sans-serif;
+  }
+  .lobster-font {
+    font-family: 'Lobster', cursive;
+  }
+  .rounded-Mplus-1c-font {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+  }
+  .custom-left {
+    left: 26.5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .custom-right {
+    right: 25%;
+    top: 62%;
+  }
+  .led-effect h2 {
+    position: relative;
+    color: #1C2B62;
+    text-shadow:
+      0 0 5px #9D3BE4,
+      0 0 10px #9D3BE4,
+      0 0 15px #9D3BE4;
+  }
+  .led-effect h3 {
+    position: relative;
+    color: #9D3BE4;
+    text-shadow:
+      0 0 5px #1C2B62,
+      0 0 10px #1C2B62,
+      0 0 15px #1C2B62;
+  }
+</style>

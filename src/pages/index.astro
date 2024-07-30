@@ -1,7 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+import Hero from '../sections/Hero.astro'
+import AboutMe from '../sections/AboutMe.astro'
+import Projects from '../sections/Projects.astro'
+import Contact from '../sections/Contact.astro'
+import Nav from '../sections/Nav.astro'
 ---
 
 <Layout title="Luis Fernández">
-	<main></main>
+	<Nav />
+	<Hero />
+	<main>
+		<AboutMe />
+		<Projects />
+		<Contact />
+	</main>
 </Layout>
