@@ -2,8 +2,11 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 
+import cloudflare from "@astrojs/cloudflare";
+
 export default defineConfig({
   integrations: [tailwind(), react()],
+
   vite: {
     build: {
       minify: 'terser', // Usa Terser para una minificación avanzada
@@ -19,7 +22,11 @@ export default defineConfig({
       },
     },
   },
+
   build: {
     minify: true, // Minifica los archivos generados (HTML, CSS, y JS)
   },
+
+  output: "hybrid",
+  adapter: cloudflare()
 });
